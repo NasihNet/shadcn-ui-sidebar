@@ -42,36 +42,36 @@ export function getMenuList(pathname: string): Group[] {
       ]
     },
     {
-      groupLabel: "Contents",
+      groupLabel: "",
       menus: [
         {
           href: "",
-          label: "Posts",
+          label: "Storage Assement",
           active: pathname.includes("/posts"),
           icon: SquarePen,
           submenus: [
             {
               href: "/posts",
-              label: "All Posts",
+              label: "Storage Summary",
               active: pathname === "/posts"
             },
             {
               href: "/posts/new",
-              label: "New Post",
+              label: "Risk Matrix",
               active: pathname === "/posts/new"
             }
           ]
         },
         {
           href: "/categories",
-          label: "Categories",
+          label: "Maps Menu",
           active: pathname.includes("/categories"),
           icon: Bookmark,
           submenus: []
         },
         {
           href: "/tags",
-          label: "Tags",
+          label: "Database",
           active: pathname.includes("/tags"),
           icon: Tag,
           submenus: []
